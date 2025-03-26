@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-gray-200">
+    <section class="max-w-6xl min-h-screen mx-auto py-3">
+
+        <!-- Header section -->
+        <header class="flex justify-between items-center bg-white rounded-md  px-4 py-3">
+            <div class="logo flex justify-center items-center gap-3">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-4xl">Dev<span class="font-bold">board</span></h1>
+            </div>
+            <div id="homeback"
+                class="cursor-pointer text-white bg-[#3752fd] gap-3 py-2 px-4 flex justify-center items-center rounded-md">
+                <h1 id="totaltask" class="text-2xl font-bold">Back To Desk</h1>
+            </div>
+        </header>
+
+        <h1 class="text-3xl font-bold text-center my-4">Blog</h1>
+
+        <section class="flex flex-col space-y-5">
+            <div class="left w-full bg-white rounded-md">
+                <h1 class="text-2xl font-bold p-3 border-b border-gray-200">Question-1: What are the different ways to
+                    select an element
+                    in the DOM?
+                </h1>
+                <div class="text-xl p-3 text-gray-800">
+                    <li>document.getElementById("id")
+                    </li>
+                    <li>document.getElementsByClassName("class")
+                    </li>
+                    <li>document.getElementsByTagName("tag")
+                    </li>
+                    <li>document.querySelector("selector")
+                    </li>
+                    <li>document.querySelectorAll("selector")
+
+                    </li>
+                </div>
+            </div>
+
+            <div class="left w-full bg-white rounded-md">
+                <h1 class="text-2xl font-bold p-3 border-b border-gray-200">Question-2: What is the difference between
+                    innerHTML, innerText, and textContent ?
+                </h1>
+                <div class="text-xl p-3 text-gray-800">
+                    <li>innerHTML: Gets or sets HTML content, including tags.
+
+                    </li>
+                    <li>innerText: Gets or sets visible text, ignoring hidden elements.
+
+                    </li>
+                    <li>textContent: Gets or sets all text, including hidden elements, but without HTML.
+
+                    </li>
+                </div>
+
+            </div>
+
+            <div class="left w-full bg-white rounded-md">
+                <h1 class="text-2xl font-bold p-3 border-b border-gray-200">Question-3: What is event delegation in the
+                    DOM?
+                </h1>
+                <p class="text-xl p-3 text-gray-800">A technique where a parent element handles events for its child
+                    elements using event bubbling.</p>
+            </div>
+
+            <div class="left w-full bg-white rounded-md">
+                <h1 class="text-2xl font-bold p-3 border-b border-gray-200">Question-4: What is event bubbling in the
+                    DOM?
+
+
+                </h1>
+                <p class="text-xl p-3 text-gray-800">When an event on a child element propagates up to its parent
+                    elements.
+
+                </p>
+            </div>
+
+            <div class="left w-full bg-white rounded-md">
+                <h1 class="text-2xl font-bold p-3 border-b border-gray-200">Question-5: How do you create, add, and
+                    remove elements using JavaScript?
+                </h1>
+                <div class="text-xl p-3 text-gray-800">
+                    <li>Create: let a = document.createElement("div");
+                    </li>
+                    <li>Add: parent.appendChild(a); or parent.append(a);
+
+                    </li>
+                    <li>Remove: a.remove(); or parent.removeChild(a); </li>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Script js -->
+    <script src="completed.js"></script>
+    <script src="toggle2.js"></script>
+
+</body>
+
+</html>
