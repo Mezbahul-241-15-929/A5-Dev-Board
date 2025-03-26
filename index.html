@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-gray-200">
+    <section class="max-w-6xl min-h-screen mx-auto py-3">
+
+        <!-- Header section -->
+        <header class="flex justify-between items-center bg-white rounded-md  px-4 py-3">
+            <div class="logo flex justify-center items-center gap-3">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-4xl">Dev<span class="font-bold">board</span></h1>
+            </div>
+            <div class="gap-3 py-2 px-4 flex justify-center items-center bg-gray-200 rounded-3xl">
+                <img class="w-6" src="assets/checkbox.png" alt="">
+                <h1 id="totaltask" class="text-3xl font-bold">23</h1>
+            </div>
+        </header>
+
+        <!-- Main section -->
+        <section class="flex mt-3 space-x-3">
+            <div class="left w-3/4 bg-white rounded-md">
+                <div class="flex space-x-3 p-3">
+                    <div class="w-1/4 bg-gray-200 rounded-md flex justify-center items-center gap-3 p-3">
+                        <div class="rounded-full size-14 bg-white flex justify-center items-center">
+                            <img class="w-6" src="assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-medium">Task Assigned</p>
+                            <h1 id="remaintask" class="text-3xl font-bold">06</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-2/4 bg-gradient-to-r from-blue-700 to-blue-200 rounded-md flex justify-center items-center gap-3 px-5 py-2">
+                        <img class="" src="assets/board.png" alt="">
+                        <p class="text-white text-2xl font-medium">Discover Something New Today!</p>
+                    </div>
+
+                    <div class="w-1/4 bg-gray-200 rounded-md flex justify-center items-center gap-3 p-3">
+                        <div class="rounded-full size-14 bg-white flex justify-center items-center">
+                            <img class="w-6" src="assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-medium">Wednesday</p>
+                            <h1 class="text-xl font-bold">Mar 2,2025</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task section -->
+                <div class="grid grid-cols-3 p-3 gap-3">
+                    <div class="bg-gray-200 p-3 rounded-md space-y-3">
+                        <div class="p-2 bg-white inline-block rounded-md
+                        ">
+                            <p class="font-medium">ShopEase</p>
+                        </div>
+                        <h1 id="task1" class="mb-4 text-xl  font-medium">Fix Mobile Button Issue </h1>
+                        <div class="p-2 bg-white inline-block rounded-md">Debug using Chrome DevTools, check for
+                            overlapping elements </div>
+
+                        <div class="flex justify-between items-center pt-3">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-semibold">21 March 2025</p>
+                            </div>
+                            <div id="com1" class="bg-[#3752fd] p-3 rounded-md text-white cursor-pointer">
+                                Completed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 bg-gray-200 p-3 rounded-md">
+                        <div class="p-2 bg-white inline-block rounded-md
+                        ">
+                            <p class="font-medium">CloudSync</p>
+                        </div>
+                        <h1 id="task2" class="mb-4 text-xl my-2 font-medium">Add Dark Mode</h1>
+                        <div class="p-2 bg-white inline-block rounded-md">Debug using Chrome DevTools, check for
+                            overlapping elements </div>
+
+                        <div class="flex justify-between items-center pt-3">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-semibold">21 March 2025</p>
+                            </div>
+                            <div id="com2" class="bg-[#3752fd] p-3 rounded-md text-white cursor-pointer">
+                                Completed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 bg-gray-200 p-3 rounded-md">
+                        <div class="p-2 bg-white inline-block rounded-md
+                        ">
+                            <p class="font-medium">SwiftPay</p>
+                        </div>
+                        <h1 id="task3" class="mb-4 text-xl my-2 font-medium">Optimize Home page </h1>
+                        <div class="p-2 bg-white inline-block rounded-md">Debug using Chrome DevTools, check for
+                            overlapping elements </div>
+
+                        <div class="flex justify-between items-center pt-3">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-semibold">21 March 2025</p>
+                            </div>
+                            <div id="com3" class="bg-[#3752fd] p-3 rounded-md text-white cursor-pointer">
+                                Completed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 bg-gray-200 p-3 rounded-md">
+                        <div class="p-2 bg-white inline-block rounded-md
+                        ">
+                            <p class="font-medium">Meta</p>
+                        </div>
+                        <h1 id="task4" class="mb-4 text-xl my-2 font-medium">Add new emoji 🤲</h1>
+                        <div class="p-2 bg-white inline-block rounded-md">Debug using Chrome DevTools, check for
+                            overlapping elements </div>
+
+                        <div class="flex justify-between items-center pt-3">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-semibold">21 March 2025</p>
+                            </div>
+                            <div id="com4" class="bg-[#3752fd] p-3 rounded-md text-white cursor-pointer">
+                                Completed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 bg-gray-200 p-3 rounded-md">
+                        <div class="p-2 bg-white inline-block rounded-md
+                        ">
+                            <p class="font-medium">Google LLC</p>
+                        </div>
+                        <h1 id="task5" class="mb-4 text-xl my-2 font-medium">Integrate OpenAI API </h1>
+                        <div class="p-2 bg-white inline-block rounded-md">Debug using Chrome DevTools, check for
+                            overlapping elements </div>
+
+                        <div class="flex justify-between items-center pt-3">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-semibold">21 March 2025</p>
+                            </div>
+                            <div id="com5" class="bg-[#3752fd] p-3 rounded-md text-white cursor-pointer">
+                                Completed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 bg-gray-200 p-3 rounded-md">
+                        <div class="p-2 bg-white inline-block rounded-md
+                        ">
+                            <p class="font-medium">Glassdoar</p>
+                        </div>
+                        <h1 id="task6" class="mb-4 text-xl my-2 font-medium">Improve Job searching </h1>
+                        <div class="p-2 bg-white inline-block rounded-md">Debug using Chrome DevTools, check for
+                            overlapping elements </div>
+
+                        <div class="flex justify-between items-center pt-3">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-semibold">21 March 2025</p>
+                            </div>
+                            <div id="com6" class="bg-[#3752fd] p-3 rounded-md text-white cursor-pointer">
+                                Completed
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="right w-1/4 bg-white rounded-md p-3">
+                <div class="flex flex-col justify-center items-center mt-3 b">
+                    <div class="flex justify-self-center items-center gap-3 ">
+                        <img src="assets/activity.png" alt="">
+                        <h1 class="text-xl font-medium">Activity Log</h1>
+                    </div>
+                    <div class="bg-[#3752fd] p-3 rounded-md text-white cursor-pointer mt-4">
+                        <h1 id="Clear">Clear History</h1>
+                    </div>
+                </div>
+                <div id="taskhistory" class="mt-5 space-y-5">
+                </div>
+            </div>
+        </section>
+
+
+
+    </section>
+
+    <!-- Script js -->
+    <script src="completed.js"></script>
+
+</body>
+
+</html>
